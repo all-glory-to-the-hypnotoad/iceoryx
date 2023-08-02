@@ -1,9 +1,8 @@
 name: Nightly iceoryx run
 
 on:
-  schedule:
-  - cron: "0 6 * * 1-5"
-  workflow_dispatch:
+  pull_request:
+    branches: [ none ]
 
 jobs:
   build-test-macos:

@@ -5,9 +5,9 @@ name: Build & Test
 # Triggers the workflow on push or pull request events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ none ]
   pull_request:
-    branches: [ master, release* ]
+    branches: [ none ]
 
 jobs:
   pre-flight-check:
